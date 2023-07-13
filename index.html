@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>    
+</head>
+<body>
+    <div id="main">
+        <h2>
+           <u> Student Registration Form </u>
+        </h2>
+        <div id="form" style="background-color:rgb(108, 95, 205);">
+            <form>
+            <label for="fname" id="label"><b>FIRST NAME</b> </label>
+            <input  type="text" id="fname" name="fname"><span>(max 30 characters a-z and A-Z)</span><br><br>
+            <label for="lname" id="label"><b>LAST NAME</b> </label>
+            <input type="text" id="lname" name="lname"><span>(max 30 characters a-z and A-Z)</span><br><br>
+            <label for="dob"id="label"><b>DATE OF BIRTH </b></label>
+                <select id="day">
+                    <option value="" disabled selected>Day</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                    
+                </select>
+                <select id="month">
+                    <option value="" disabled selected>Month</option><br>
+                    <option value="january">January</option><br>
+                    <option value="february">February</option><br>
+                    <option value="march">March</option><br>
+                    <option value="april">April</option><br>
+                    <option value="may">May</option><br>
+                    <option value="june">June</option><br>
+                    <option value="july">July</option><br>
+                    <option value="august">August</option><br>
+                    <option value="september">September</option><br>
+                    <option value="october">October</option><br>
+                    <option value="november">November</option><br>
+                    <option value="december">December</option><br>                    
+                </select>
+                <select id="year">
+                    <option value="" disabled selected>Year</option><br>
+                    <option value="2023">2023</option><br>
+                    <option value="2022">2022</option><br>
+                    <option value="2021">2021</option><br>
+                    <option value="2020">2020</option><br>
+                    <option value="2019">2019</option><br>
+                    <option value="2018">2018</option><br>
+                    <option value="2017">2017</option><br>
+                    <option value="2016">2016</option><br>
+                    <option value="2015">2015</option><br>
+                    <option value="2014">2014</option><br>
+                    <option value="2013">2013</option><br>
+                    <option value="2012">2012</option><br>                    
+                </select><br><br>
+                <label for="email"id="label"><b>EMAIL ID</b> </label> 
+                <input type="text" id="email" name="email"><br><br>
+                <label for="num"id="label"><b>MOBILE NUMBER</b></label> 
+                <input type="number" id="num" name="num"><span>(10 digit number)</span><br><br>
+                <label for="gender"id="label"><b>GENDER</b></label> 
+                <input type="radio" id="male " name="gender" value="Male">
+                <label for="male">MALE </label> 
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">FEMALE </label> <br><br>
+                <label for="Address" class="add" ><b>ADDRESS</b></label> 
+                <textarea rows="3"></textarea><br><br>
+                <label for="city"id="label"><b>CITY</b></label>
+                <input type="text" id="city" name="city"><span>(max 30 characters a-z and A-Z)</span><br> <br>
+                <label for="pc"id="label"><b>PIN CODE</b></label>
+                <input type="number" id="pc" name="pc" maxlength="6"><span>(10 digit number)</span><br> <br>
+                <label for="state"id="label"><b>STATE</b></label>
+                <input type="text" id="state" name="state" maxlength="30"><span>(max 30 characters a-z and A-Z)</span><br> <br>
+                <label for="country"id="label"><b>COUNTRY</b></label>
+                <input type="text" id="country" name="country"><br> <br>
+                <label for="hobbies"id="label"><b>HOBBIES</b></label>
+                <label for="drawing">DRAWING</label>
+                <input type="checkbox" id="drawing" name="drawing" value="drawing">
+                <label for="singing">SINGING</label>
+                <input type="checkbox" id="singing" name="singing" value="singing">
+                <label for="dancing">DANCING</label>
+                <input type="checkbox" id="dancing" name="dancing" value="dancing">
+                <label for="sketching">SKETCHING</label>
+                <input type="checkbox" id="sketching" name="sketching" value="sketching">
+                <label for="others">OTHERS</label>
+                <input type="checkbox" id="others" name="others" value="others">
+                <input type="text" id="others" name="others"><br><br>   
+                <div id="tab"> <label for="qualification"id="label"><b>QUALIFICATION</b></label>
+               <table>
+                    <tr>
+                    <th>SI.No</th>
+                    <th>EXAMINATION</th>
+                    <th>BOARD</th>
+                    <th>PERCENTAGE</th>
+                    <th>YEAR OF PASSING</th>
+                    <tr>
+                        <td>1</td>
+                    <td>Class X</td>
+                       <td><input id="board1"type="text"></td>     
+                      <td><input id="percentage1"type="text"></td>     
+                       <td><input id="yearofpassing1"type="text"></td>     
+                    </tr>
+                     <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                       <td><input id="board2"type="text"></td> 
+                       <td><input id="percentage2"type="text"></td>     
+                       <td><input id="yearofpassing2"type="text"></td>   
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                           <td><input id="board3"type="text"></td> 
+                           <td><input id="percentage3"type="text"></td>     
+                           <td><input id="yearofpassing3"type="text"></td>   
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                           <td><input id="board4"type="text"></td> 
+                           <td><input id="percentage4"type="text"></td>     
+                           <td><input id="yearofpassing4"type="text"></td>   
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td id="x">(10 char max)</td>
+                        <td id="x">(upto 2 decimal)</td>
+                    </tr>
+                </tr>
+                </table>
+            </div> <br><br>
+                <label for="caf" id="label"><b>COURSES</b></label><br>
+                <label for="caf" id="label"><b>APPLIED FOR</b></label>
+              
+                <label for="bca">BCA</label>
+                <input type="radio" id="bca" name="bca">
+                <label for="bcom">B.COM</label>
+                <input type="radio" id="bcom" name="bcom">
+                <label for="bsc">B.SC</label>
+                <input type="radio" id="bsc" name="bsc">
+                <label for="ba">B.A</label>
+                <input type="radio" id="ba" name="ba"><br><br>  
+               <div id="btn"> <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+
+
+#main> h2{
+    text-align: center;
+    color: rgb(108, 95, 205);
+}
+#form{
+    margin: 3rem;
+  
+ 
+}
+form{
+    padding:1rem;
+    
+}
+#btn{
+text-align: center;
+}
+#label{
+    display: inline-block;
+    min-width: 160px;
+}
+#tab{
+display: flex;
+}
+#x{
+padding-left: 3rem;
+}
+.add{
+    vertical-align: top;
+    display: inline-block;
+    min-width: 160px;
+}
+table{
+    color: white;
+}
+label{
+    color: white;
+}
+span{
+    color:white;
+}
+</style>
